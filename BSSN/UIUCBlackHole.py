@@ -40,6 +40,9 @@ M, chi = par.Cparameters("REAL", thismodule, ["M", "chi"], [1.0, 0.99])
 #                       == False will perform the full ADM SphorCart->BSSN Curvi conversion
 def UIUCBlackHole(ComputeADMGlobalsOnly = False, include_NRPy_basic_defines_and_pickle=False):
     global Sph_r_th_ph,r,th,ph, gammaSphDD, KSphDD, alphaSph, betaSphU, BSphU
+    
+    # Thiago's change: make other terms global as well:
+    global a, rp, rm, rBL, SIG, DEL, AA
 
     # All gridfunctions will be written in terms of spherical coordinates (r, th, ph):
     r,th,ph = sp.symbols('r th ph', real=True)
