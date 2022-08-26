@@ -2,3 +2,4 @@ numpy
 sympy
 matplotlib
 nrpylatex>=1.2
+ffmpeg-python
